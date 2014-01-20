@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Iain Camacho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/resources/css/style.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/resources/js/script.js"></script>
+    <script type="text/javascript" src="/resources/js/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="/resources/js/Charts.js"></script>
+    <script>
+      $(document).ready(function() {
+        //Get the context of the canvas element we want to select
+        var data = [
+                    {
+                    value: 80,
+                    color:"#7dbaf7"
+                    },
+                    {
+                    value : 25,
+                    color : "#fcab2b"
+                    },
+                    {
+                    value : 100,
+                    color : "#f04848"
+                    },
+                    {
+                    value : 80,
+                    color : "#2f98ed"
+                    },
+                    {
+                    value : 60,
+                    color : "#bab812"
+                    }
+
+                    ];
+          var options = {
+            segmentStrokeColor : "#fff",
+            segmentStrokeWidth : 4,
+            animationSteps : 100,
+            animateScale : true,
+            animationEasing : "easeOutQuart",
+            animation : false,
+          }
+        var ctx = document.getElementById("skills").getContext("2d");
+        var myNewChart = new Chart(ctx).Doughnut(data, options);
+        new Chart(ctx).Doughnut(data,options);
+      });
+    </script>
+  </head>
+	<body>
+    <div id="headers">
+      <div class="superheader">
+        <div class="center">
+          <ul>
+            <li>
+              <a href="/portfolio">
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="/resume">
+                Resume
+              </a>
+            </li>
+            <li>
+              <a href="http://iainandpatrick.ghost.io/">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href="/contact">
+                Contact Me
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header">
+        <div class="center">
+          <a href="/"><img src="/resources/images/logo.png" id="logo" alt="Iain Camacho, Designer and Engineer" /></a>
+          <a href="#" id="more">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="headline">
+        My Story
+      </div>
+      <p>
+        I love the internet.  Not like some people love Facebook, Twitter, or LinkedIn, I <strong>love</strong> the internet.  I love to play with it, tinker with it, and make it beautiful.  And I take every chance I can to make that happen.  I am a Web Designer and a Front-End Engineer.  I’ve worked at a variety of companies ranging from small start ups like 38 Media to large corporations like Salesforce.com.
+      </p>
+    </div>
+    <div class="center">
+      <div class="oneThird">
+        <h1>
+          My Talents
+        </h1>
+        <canvas id="skills" width="320" height="320"></canvas>
+        <ul class="talentslist">
+          <li>
+            <div class="picker photoshop"></div>
+            <strong>Photoshop</strong> to design beautiful websites
+          </li>
+          <li>
+            <div class="picker illustrator"></div>
+            <strong>Illustrator</strong> to create fantastic graphics
+          </li>
+          <li>
+            <div class="picker html"></div>
+            <strong>HTML</strong> to build a stable structure
+          </li>
+          <li>
+            <div class="picker css"></div>
+            <strong>CSS</strong> to make the structure visually striking
+          </li>
+          <li>
+            <div class="picker js"></div>
+            <strong>Javascript</strong> to breath life into the design
+          </li>
+        </ul>
+        <h1>
+          My Other Interests
+        </h1>
+        <p>
+          <i class="fa fa-camera"></i> Capturing Moments Through Photography
+        </p>
+        <p>
+          <i class="fa fa-coffee"></i> Making and Drinking <strong>Good</strong> Coffee
+        </p>
+        <p>
+          <i class="fa fa-film"></i> Watching Movies and Television
+        </p>
+        <p style="margin-bottom:50px;">
+          <i class="fa fa-plane"></i> Traveling and Exploring the World
+        </p>
+        <h1>
+          Want to talk?
+        </h1>
+        <p>
+          Well then I'd love to hear from you! Shoot me an <a href="mailto:iain.peter.camacho@gmail.com">email</a>
+        </p>
+      </div>
+      <div class="twoThirds">
+        <h1>
+          My History
+        </h1>
+        <div class="timeline">
+            <div class="main-line"></div>
+            <div class="time-segment">
+              <div class="timestamp">
+                Today
+              </div>
+              <ul>
+                <li>
+                  <a href="http://www.desk.com/" target="_blank">
+                    <div class="pointer"></div>
+                    <div class="timeline-dot"><div class="inner"></div></div>
+                    <div class="title">
+                      Salesforce.com
+                    </div>
+                    <div class="main-content">
+                      <p>
+                        Marketing Designer and Front End Engineer at Desk.com<br />
+                        <em>3.8 GPA</em>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="first-offset">
+                  <a href="http://en.wikipedia.org/wiki/San_Francisco" target="_blank">
+                    <div class="pointer"></div>
+                    <div class="timeline-dot"><div class="inner"></div></div>
+                    <div class="title">
+                      Moved to San Francisco
+                    </div>
+                    <div class="main-content">
+                      <p>
+                        Moved from Boston to SF
+                        <em>2013</em>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.appneta.com/" target="_blank">
+                    <div class="pointer"></div>
+                    <div class="timeline-dot"><div class="inner"></div></div>
+                    <div class="title">
+                      AppNeta Inc
+                    </div>
+                    <div class="main-content">
+                      <p>
+                        Marketing Creative Director <br />
+                        Designer and Engineer
+                        <em>2013</em>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.isovera.com/" target="_blank">
+                    <div class="pointer"></div>
+                    <div class="timeline-dot"><div class="inner"></div></div>
+                    <div class="title">
+                      Isovera
+                    </div>
+                    <div class="main-content">
+                      <p>
+                        Lead Deisgner and Front End Engineer
+                        <em>2012</em>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.primarydesign.com/" target="_blank">
+                    <div class="pointer"></div>
+                    <div class="timeline-dot"><div class="inner"></div></div>
+                    <div class="title">
+                      Primary Design
+                    </div>
+                    <div class="main-content">
+                      <p>
+                        Deisgner and Front End Engineer
+                        <em>2012</em>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.bc.edu" target="_blank">
+                    <div class="pointer"></div>
+                    <div class="timeline-dot"><div class="inner"></div></div>
+                    <div class="title">
+                      Boston College
+                    </div>
+                    <div class="main-content">
+                      <p>
+                        Computer Science
+                        <em>2012</em>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/resources/images/38media.png" target="_blank">
+                    <div class="pointer"></div>
+                    <div class="timeline-dot"><div class="inner"></div></div>
+                    <div class="title">
+                      38 Media, Inc
+                    </div>
+                    <div class="main-content">
+                      <p>
+                        Founder, Designer and Front End Engineer
+                        <em>2011</em>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.bac.edu" target="_blank">
+                    <div class="pointer"></div>
+                    <div class="timeline-dot"><div class="inner"></div></div>
+                    <div class="title">
+                      Boston Architectural College
+                    </div>
+                    <div class="main-content">
+                      <p>
+                        Design Theory
+                        <em>2009</em>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.waltdisneyworld.com" target="_blank">
+                    <div class="pointer"></div>
+                    <div class="timeline-dot"><div class="inner"></div></div>
+                    <div class="title">
+                      Walt Disney World
+                    </div>
+                    <div class="main-content">
+                      <p>
+                        Cast Memeber - Operations and Entertainment
+                        <em>2007</em>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer>
+      <div class="center">
+        &copy; 2014 - Iain-Peter Camacho
+        <ul class="social">
+          <li>
+            <a target="_blank" href="http://www.twitter.com/dugitoi">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.facebook.com/IainCamacho">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://plus.google.com/+IainPeterCamacho">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="http://www.linkedin.com/in/iduggan">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
