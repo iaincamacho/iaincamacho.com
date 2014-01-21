@@ -14,4 +14,4 @@ module.exports = function(grunt) {
 
   grunt.registerTask('server', ['exec:server']);
   grunt.registerTask('default', ['server']);
-};  
+};  	
